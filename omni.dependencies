@@ -1,0 +1,20 @@
+[
+  {
+    "repository": "LineageOS/android_hardware_samsung",
+    "target_path": "hardware/samsung",
+    "remote":"github",
+    "revision":"lineage-17.1"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_vendor_qcom_opensource_commonsys",
+    "target_path": "vendor/qcom/opensource/commonsys",
+    "revision": "android-10"
+  },
+  {
+    "remote": "TeamWin",
+    "repository": "android_device_qcom_twrp-common",
+    "target_path": "device/qcom/twrp-common",
+    "revision": "android-10"
+  }
+]
