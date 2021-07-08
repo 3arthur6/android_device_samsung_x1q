@@ -1,14 +1,3 @@
-import /init.recovery.qcom_decrypt.rc
-
-on init
-    # Create location for fs_mgr to store abbreviated output from filesystem
-    # checker programs.
-    mkdir /dev/fscklogs 0770 root system
-
 on fs
     wait /dev/block/platform/${ro.boot.boot_devices}
     symlink /dev/block/platform/${ro.boot.boot_devices} /dev/block/bootdevice
-
-    # Set fscklog permission
-    chown root system /dev/fscklogs/log
-    chmod 0770 /dev/fscklogs/log
